@@ -217,9 +217,9 @@ print("\27[36m"..[[
   | | |  _| | | / _ \ |  \| | | | |
   | | | |___| |___ / ___ \| |\  | |_| |
   |_| |_____|_____/_/   \_\_| \_|____/
-> CH › @IIIS1
-> CH › @TELANDTEAM
-~> DEVELOPER › @VVVZVV
+> CH › @Ill_n_lll1
+> CH › @RIKORTEAM
+~> DEVELOPER › @DEVRIKOR
 ]]..'\27[m')
 Info = dofile("Info.lua")
 User = Info.User
@@ -621,7 +621,7 @@ local function connect_tcp(socket, parameters)
 local host, port = parameters.host, tonumber(parameters.port)
 local ok, err = socket:connect(host, port)
 if not ok then
-print("\27[34m"..[[BY : @VVVZVV:]].."\27[m")
+print("\27[34m"..[[BY : @DEVRIKOR:]].."\27[m")
 os.exit()
 end 
 socket:setoption('tcp-nodelay', parameters.tcp_nodelay)
